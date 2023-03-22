@@ -1,0 +1,270 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+header {
+    grid-area: he;
+    background-color: rgb(32, 27, 27);
+    position: sticky;
+    top: 0;
+    z-index: 
+}
+
+#gridwrapper_home {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 6vh 60vh 110vh 60vh 30vh;
+    grid-template-areas:
+    "he"
+    "we"
+    "se"
+    "ot"
+    "fo";
+}
+
+header {
+    grid-area: he;
+    background-color: rgb(32, 32, 33);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo_and_name {
+    display: flex;
+    align-items: center; 
+}   
+
+#logo {
+    height: 4.5vh;
+    width: auto;
+}
+
+#name {
+    color: rgb(250, 250, 250);
+    font-size: 2.5vh;
+}
+
+#name2 {
+    color: rgb(250, 250, 250);
+    text-align: center;
+    font-size: 1.5vh;
+}
+
+#burger div {
+    width: 35px;
+    height: 3px;
+    background-color:rgb(250, 250, 250);
+    margin: 7px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    margin-right: 20px;
+}
+
+#nav_links {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 100%;
+    background-color: rgb(32, 32, 33);
+    justify-content: space-around;
+    position: absolute;
+    top: -40vh;
+    right: 0px;
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+#nav_links li {
+    list-style: none;
+    border-top: solid rgb(27, 27, 28) 2px;
+    margin-left: 2vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#nav_links a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+}
+
+#nav_links a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+#burger {
+    cursor: pointer;
+}
+
+.burger_toggle #line2 {
+    opacity: 0;
+}
+
+.burger_toggle #line1 {
+    transform: rotate(-45deg) translate( -4.5px, 10px);
+}
+
+.burger_toggle #line3 {
+    transform: rotate(45deg) translate( -4.5px, -10px);
+}
+
+.nav_active {
+    transform: translateY(45.9vh);
+}
+
+#welcome {
+    grid-area: we;
+    background-image: url(/img/jj-shev-VrxWLZnCcBA-unsplash.jpg);
+    background-size: 100% auto;
+    background-position: center;
+}
+
+h1 {
+    color: rgb(250, 250, 250);
+    font-size: 4vh;
+    text-align: center;
+    margin-top: 25vh;
+    margin-bottom: 3vh;
+}
+
+.slogan {
+    color: rgb(250, 250, 250);
+    font-size: 2vh;
+    text-align: center;
+}
+
+#services {
+    background-color: rgb(233, 233, 233);
+    display: grid;
+    grid-template-rows: 10vh 300px 300px;
+    grid-template-columns: 350px;
+    grid-gap: 2vh;
+    padding-top: 4vh;
+    justify-content: center;
+    grid-template-areas: 
+    "s1"
+    "s2"
+    "s3"
+    ;
+}
+
+#service1 {
+    grid-area: s1;
+    text-align: center;
+}
+
+#service1 h2{
+    font-size: 3.5vh;
+}
+
+#service1 p{
+    margin-top: 1.5vh;
+    font-size: 1.8vh;
+    overflow: hidden;
+}
+
+#service2 {
+    grid-area: s2;
+    background-color: rgb(250, 250, 250);
+    border-radius: 0.5vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#service3 {
+    grid-area: s3;
+    background-color: rgb(250, 250, 250);
+    border-radius: 0.5vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#service2:hover {
+    transform:translate(0vh, -0.35vh);
+}
+
+#service3:hover {
+    transform:translate(0vh, -0.35vh);
+}
+
+.gridwrapper_mini {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 17.5% 17.5%;
+    grid-template-areas:
+    "si"
+    "sn"
+    "bb"
+    ;
+}
+
+.service_img {
+    grid-area: si;
+}
+
+#service_img1 {
+    background-image: url(/img/allef-vinicius-IvQeAVeJULw-unsplash.jpg);
+    background-position: center;
+    background-size: 100% auto;
+    border-top-left-radius: 0.5vh;
+    border-top-right-radius: 0.5vh;
+}
+
+#service_img2 {
+    background-image: url(/img/dwi-rina-0_8qlYOmX7g-unsplash.jpg);
+    background-position: center;
+    background-size: 100% auto;
+    border-top-left-radius: 0.5vh;
+    border-top-right-radius: 0.5vh;
+}
+
+.service_name {
+    grid-area: sn;
+    display: flex;
+    align-items: center;
+    padding-left: 1vh;
+    color: rgb(32, 32, 33);
+}
+
+.book_button {
+    grid-area: bb;
+    text-align: center;
+    border-top: solid 1px rgb(227, 227, 227);
+    padding-top: 1.5vh;
+    text-decoration: none;
+    color: rgb(103, 103, 103);
+    transition: 0.3s;
+}
+
+.book_button:hover {
+    background-color: rgb(225, 225, 225);
+    color: rgb(92, 92, 92);
+}
+
+
+#other_services {
+    grid-area: ot;
+    background-color: rgb(250, 250, 250);
+}
+
+footer {
+    grid-area: fo;
+    background-color: rgb(32, 32, 33);
+}
+
+
+
+@media screen and (min-width: 800px) {
+
+}
