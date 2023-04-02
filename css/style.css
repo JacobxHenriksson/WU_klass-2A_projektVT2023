@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb;
+    background-color: rgb(250, 250, 250);    
 }
 
 #gridwrapper_home {
@@ -259,7 +259,6 @@ h1 {
     text-align: center;
     border-top: solid 1px rgb(227, 227, 227);
     padding-top: 3%;
-    text-decoration: none;
     color: rgb(103, 103, 103);
     transition: 0.3s;
     font-family: 'Questrial', sans-serif;
@@ -292,6 +291,7 @@ h1 {
 
 .service_list {
     margin-bottom: 50px;
+    margin-left: 25px;
 }
 
 
@@ -418,50 +418,12 @@ footer {
 #gridwrapper_products{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 80px 1000px 300px;
+    grid-template-rows: 80px 300px;
     grid-template-areas:
     "he"
-    "pr"
     "fo";
 }
 
-.gridwrapper_mini_products {
-    display: grid;
-    grid-template-columns: 90vw;
-    grid-template-rows: 50px 250px 250px 250px 250px;
-    grid-template-areas:
-    "h2"
-    "p1"
-    "p2"
-    "p3"
-    "p4"
-    ;
-}
-
-#products_title {
-    grid-area: h2;
-}
-
-#product1 {
-    grid-area: p1;
-}
-
-#product2{
-    grid-area: p2;
-}
-
-#product3{
-    grid-area: p3;
-}
-
-#product4{
-    grid-area: p4;
-}
-
-.product img {
-    height: 100px;
-    width: auto;
-}
 
 
 @media screen and (min-width: 500px) {
