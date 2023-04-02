@@ -3,10 +3,14 @@
  padding: 0;
 }
 
+body {
+    background-color: rgb;
+}
+
 #gridwrapper_home {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 80px 500px 1100px 500px 300px;
+    grid-template-rows: 80px 500px 880px 500px 300px;
     grid-template-areas:
     "he"
     "we"
@@ -95,8 +99,8 @@ header {
 
 #nav_links a:hover {
     cursor: pointer;
-    text-decoration: underline;
     transition: 0.2s;
+    background-color: rgb(103, 103, 103);
 }
 
 #burger {
@@ -132,13 +136,13 @@ header {
 h1 {
     color: rgb(250, 250, 250);
     font-family: 'Questrial', sans-serif;
-    font-size: 5vh;
+    font-size: 3rem;
     text-align: center;
 }
 
 .slogan {
     color: rgb(250, 250, 250);
-    font-size: 2.8vh;
+    font-size: 1.5rem;
     text-align: center;
     font-family: 'Questrial', sans-serif;
 }
@@ -146,17 +150,16 @@ h1 {
 #services {
     background-color: rgb(233, 233, 233);
     display: grid;
-    grid-template-rows: 10vh auto auto;
+    grid-template-rows: 100px 320px 320px;
     grid-template-columns: 92vw;
-    grid-gap: 5vh;
-    padding-top: 4vh;
+    grid-gap: 30px;
+    padding-top: 40px;
     justify-content: center;
     grid-template-areas: 
     "s1"
     "s2"
     "s3"
     ;
-    padding-bottom: 5vh ;
 }
 
 #service1 {
@@ -166,19 +169,19 @@ h1 {
 }
 
 #service1 h2{
-    font-size: 4vh;
+    font-size: 2.1rem;
 }
 
 #service1 p{
-    margin-top: 1.5vh;
-    font-size: 2.5vh;
+    margin-top: 15px;
+    font-size: 1.4rem;
     overflow: hidden;
 }
 
 #service2 {
     grid-area: s2;
     background-color: rgb(250, 250, 250);
-    border-radius: 0.5vh;
+    border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     overflow: hidden;
     text-decoration: none;
@@ -188,7 +191,7 @@ h1 {
 #service3 {
     grid-area: s3;
     background-color: rgb(250, 250, 250);
-    border-radius: 0.5vh;
+    border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     overflow: hidden;
     text-decoration: none;
@@ -224,26 +227,26 @@ h1 {
     background-image: url(/img/allef-vinicius-IvQeAVeJULw-unsplash.jpg);
     background-position: center;
     background-size: 100% auto;
-    border-top-left-radius: 0.5vh;
-    border-top-right-radius: 0.5vh;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 #service_img2 {
-    background-image: url(/img/dwi-rina-0_8qlYOmX7g-unsplash.jpg);
+    background-image: url(/img/the-nix-company-tR-fqLlBg5c-unsplash.jpg);
     background-position: center;
     background-size: 100% auto;
-    border-top-left-radius: 0.5vh;
-    border-top-right-radius: 0.5vh;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .service_name {
     grid-area: sn;
     display: flex;
     align-items: center;
-    padding-left: 1vh;
+    padding-left: 10px;
     color: rgb(32, 32, 33);
     font-family: 'Questrial', sans-serif;
-    font-size: 2.5vh;
+    font-size: 1.4rem;
     font-weight: bolder;
 }
 
@@ -251,7 +254,7 @@ h1 {
     grid-area: bb;
     text-align: center;
     border-top: solid 1px rgb(227, 227, 227);
-    padding-top: 1.5vh;
+    padding-top: 13px;
     text-decoration: none;
     color: rgb(103, 103, 103);
     transition: 0.3s;
@@ -267,18 +270,18 @@ h1 {
 #other_services {
     grid-area: ot;
     background-color: rgb(250, 250, 250);
-    margin: 2.5vh 0 0 20px;
+    margin: 25px 0 0 20px;
 }
 
 #other_services h2 {
     font-family: 'Questrial', sans-serif;
-    margin-bottom: 2.5vh;
-    font-size: 3.8vh;
+    margin-bottom: 25px;
+    font-size: 2.1rem;
 }
 
 #other_services p{
     font-family: 'Questrial', sans-serif;
-    font-size: 2.5vh;
+    font-size: 1.5rem;
 }
 
 .service_list {
@@ -289,7 +292,7 @@ h1 {
 .service_list li{
     font-family: 'Questrial', sans-serif;
     margin-bottom: 7px;
-    font-size: 3vh;
+    font-size: 1.5rem;
 }
 
 footer {
@@ -356,7 +359,7 @@ footer {
 #gridwrapper_open_hours{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 80px calc(100vh - (80px + 300px)) 300px;
+    grid-template-rows: 80px minmax(calc(100vh - (80px + 300px)), 420px) 300px;
     grid-template-areas:
     "he"
     "oh"
@@ -370,7 +373,7 @@ footer {
 #opening_hours h2 {
     text-align: center;
     font-family: 'Questrial', sans-serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 20px 0 40px 0;
 }
 
@@ -385,7 +388,7 @@ footer {
 .day_time {
     display: flex;
     justify-content: space-between;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
 }
 
 .day_time p {
@@ -396,6 +399,78 @@ footer {
     font-weight: bolder;
 }
 
+#gridwrapper_aboutus{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 300px;
+    grid-template-areas:
+    "he"
+    "fo";
+}
+
+
+#gridwrapper_products{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 1000px 300px;
+    grid-template-areas:
+    "he"
+    "pr"
+    "fo";
+}
+
+.gridwrapper_mini_products {
+    display: grid;
+    grid-template-columns: 90vw;
+    grid-template-rows: 50px 250px 250px 250px 250px;
+    grid-template-areas:
+    "h2"
+    "p1"
+    "p2"
+    "p3"
+    "p4"
+    ;
+}
+
+#products_title {
+    grid-area: h2;
+}
+
+#product1 {
+    grid-area: p1;
+}
+
+#product2{
+    grid-area: p2;
+}
+
+#product3{
+    grid-area: p3;
+}
+
+#product4{
+    grid-area: p4;
+}
+
+.product img {
+    height: 100px;
+    width: auto;
+}
+
+.img_text {
+
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+}
+
 @media screen and (min-width: 800px) {
+
+}
+
+@media screen and (min-width: 1700px) {
 
 }
