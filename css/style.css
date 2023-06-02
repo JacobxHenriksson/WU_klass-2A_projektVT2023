@@ -129,7 +129,7 @@ header {
 
 #welcome {
     grid-area: we;
-    background-image: url(/img/jj-shev-VrxWLZnCcBA-unsplash.jpg);
+    background-image: url(../img/jj-shev-VrxWLZnCcBA-unsplash.jpg);
     background-size: 100% auto;
     background-position: center;
     display: flex;
@@ -152,6 +152,7 @@ h1 {
 }
 
 #services {
+    grid-area: se;
     background-color: rgb(233, 233, 233);
     display: grid;
     grid-template-rows: 100px 320px 320px;
@@ -228,7 +229,7 @@ h1 {
 }
 
 #service_img1 {
-    background-image: url(/img/allef-vinicius-IvQeAVeJULw-unsplash.jpg);
+    background-image: url(../img/allef-vinicius-IvQeAVeJULw-unsplash.jpg);
     background-position: center;
     background-size: 100% auto;
     border-top-left-radius: 5px;
@@ -236,7 +237,7 @@ h1 {
 }
 
 #service_img2 {
-    background-image: url(/img/the-nix-company-tR-fqLlBg5c-unsplash.jpg);
+    background-image: url(../img/the-nix-company-tR-fqLlBg5c-unsplash.jpg);
     background-position: center;
     background-size: 100% auto;
     border-top-left-radius: 5px;
@@ -405,26 +406,247 @@ footer {
     font-weight: bolder;
 }
 
-#gridwrapper_aboutus{
+#gridwrapper_aboutus {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 80px 300px;
+    grid-template-rows: 80px 700px 1100px 300px;
     grid-template-areas:
     "he"
+    "au"
+    "wk"
     "fo";
+    background-color: rgb(233, 233, 233);
+    justify-content: center;
 }
 
+#about_us {
+    grid-area: au;
+    background-color: rgb(250, 250, 250);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+    grid-template-areas:
+    "ai"
+    "at"
+    ;
+    height: 650px;
+    width: 85vw;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#about_us_img {
+    grid-area: ai;
+    background-image: url(../img/ulrich-mareli-aspeling-jxt96If7uho-unsplash.jpg);
+    background-position: center;
+    background-size: 100% auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#about_us_text {
+    grid-area: at;
+    font-family: 'Questrial', sans-serif;
+    padding-top: 10px;
+}
+
+#about_us_text h2 {
+    text-align: center;
+}
+
+#about_us_text p {
+    padding: 12px;
+}
+
+#workers {
+    grid-area: wk;
+    display: grid;  
+    grid-template-columns: 250px;
+    grid-template-rows: 50px 300px 300px 300px;
+    gap: 35px;
+    grid-template-areas:
+    "os"
+    "w1"
+    "w2"
+    "w3"
+    ;
+    justify-content: center;
+    background-color: rgb(250, 250, 250);
+}
+
+.worker {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 80% 20%;
+    border-radius: 15px;
+    border: solid rgb(27, 27, 28) 1px;
+}
+
+#our_staff {
+    grid-area: os;
+    margin-top: 20px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#worker1 {
+    grid-area: w1;
+}
+
+#worker2 {
+    grid-area: w2;
+}
+
+#worker3 {
+    grid-area: w3;
+}
+
+.worker_img {
+    background-position: center;
+    background-size: 100% auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#worker_img1 {
+    background-image: url(../img/jeppe-monster-T_gTN3Po9RQ-unsplash.jpg);
+}
+
+#worker_img2 {
+    background-image: url(../img/Joker_man.jpg)
+}
+
+#worker_img3 {
+    background-image: url(../img/obi-pixel7propix--sRVfY0f2d8-unsplash.jpg);
+}
+
+.worker_name {
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    align-self: center;
+    font-size: 1.3rem;
+}
 
 #gridwrapper_products{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 80px 300px;
+    grid-template-rows: 80px 2550px 300px;
     grid-template-areas:
     "he"
+    "pr"
     "fo";
 }
 
 
+#products {
+    grid-area: pr;
+    display: grid;
+    grid-template-rows: 75px 500px 500px 500px 500px;
+    grid-template-columns: 92vw;
+    grid-gap: 75px;
+    justify-content: center;
+    grid-template-areas: 
+    "h1"
+    "p1"
+    "p2"
+    "p3"
+    "p4"
+    ;
+    padding-top: 100px;
+    background-color: rgb(233, 233, 233);
+}
+
+#product_h1 {
+    grid-area: h1;
+    color: black;
+}
+
+#hair_product {
+    grid-area: p1;
+}
+
+#salt_spray {
+    grid-area: p2;
+}
+
+#hair_gel {
+    grid-area: p3;
+}
+
+#face_product {
+    grid-area: p4;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas:
+    "pi"
+    "pt"
+    ;
+}
+
+.product_img {
+    grid-area: pi;
+}
+
+#product_img1 {
+    background-image: url(../img/logan-weaver-lgnwvr-i9TXlc52aeg-unsplash.jpg);
+    background-position: center;
+    background-size: 100% auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#product_img2 {
+    background-image: url(../img/apothecary-87-tB93AQ-WjmM-unsplash.jpg);
+    background-position: center;
+    background-size: 100% auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#product_img3 {
+    background-image: url(../img/lance-reis-hc92E-U_gNI-unsplash.jpg);
+    background-position: center;
+    background-size: 100% auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#product_img4 {
+    background-image: url(../img/the-nix-company-tR-fqLlBg5c-unsplash.jpg);
+    background-position: center;
+    background-size: 100% auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.product_text {
+    grid-area: pt;
+    background-color: rgb(250, 250, 250);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+}
+
+.product_text h2 {
+    color: rgb(32, 32, 33);
+    font-family: 'Questrial', sans-serif;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding-top: 15px;
+}
+
+.product_text details {
+    cursor: pointer;
+    padding-top: 10px;
+    font-family: 'Questrial', sans-serif;
+}
 
 @media screen and (min-width: 500px) {
     #services {
@@ -433,7 +655,24 @@ footer {
 
     #gridwrapper_home {
         grid-template-rows: 80px 500px 880px 450px 300px;
-    }  
+    } 
+
+    #about_us {
+        width: 400px;
+    }
+
+    #workers {
+        grid-template-columns: 300px;
+        grid-template-rows: 50px 350px 350px 350px;
+    }
+
+    #gridwrapper_aboutus {
+        grid-template-rows: 80px 700px 1250px 300px;
+    }
+
+    #products {
+        grid-template-columns: 400px;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -530,6 +769,19 @@ footer {
         font-size: 1.1rem;
     }
 
+    #about_us {
+        width: 700px;
+    }
+
+    #about_us_text p {
+        font-size: 1.3rem;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #products {
+        grid-template-columns: 500px;
+    }
 }
 
 @media screen and (min-width: 1400px) {
@@ -605,4 +857,67 @@ footer {
         font-size: 1.3rem;
     }
 
+    #about_us {
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 100%;
+        grid-template-areas:
+        "ai at"
+        ;
+    }
+
+    #about_us_text p {
+        font-size: 1.3rem;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 25px;
+    }
+
+    #about_us_img {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0;
+    }
+
+    #about_us {
+        width: 1000px;
+    }
+
+    #about_us_text h2 {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    #workers {
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 50px 450px;
+        grid-template-areas:
+        "os os os"
+        "w1 w2 w3"
+        ;
+        column-gap: 150px;
+        row-gap: 50px;
+    }
+
+    #gridwrapper_aboutus {
+        grid-template-rows: 80px 700px 650px 300px;
+    }
+
+    #our_staff {
+        margin-top: 25px;
+        font-size: 2.5rem;
+    }
+
+    #products {
+        grid-template-rows: 75px 500px 500px;
+        grid-template-columns: 500px 500px;
+        grid-template-areas: 
+        "h1 h1"
+        "p1 p2"
+        "p3 p4"
+        ;
+    }
+
+    #gridwrapper_products{
+        grid-template-rows: 80px 1400px 300px;
+    }
 }
